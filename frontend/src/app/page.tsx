@@ -1,6 +1,5 @@
-import Image from "next/image";
-import Navbar from "@/components/Navbar"; // Ensure path is correct
-import Card1 from "@/components/Card1"; // Ensure path is correct
+import Navbar from "@/components/Navbar"; 
+import Card1 from "@/components/Card1"; 
 import JobCard from "@/components/JobCard";
 
 const Card1data = [
@@ -33,7 +32,7 @@ const jobListings = [
   {
     logo: "https://s3-alpha-sig.figma.com/img/4f7c/e5e0/ecfb7e3be695fa48d8a53ea409b9166f?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=sw1ncAOqJEJGOzEUmLNjTjoYVyc4dV4KtRUUSXvBNcq3uB5I-KKpHm-LlqVElompKz6EEzMtACRNGONdHtMWfxna4oHxbP~KLXEgxBUBeZx-WARP0rk44nKdpM87~mUmcjOO4dGqlZfQheU4jStUr3RmRggMcgYZYgMkGNPChiYlm7ajgJJzzb5I6oauztM2EvZ0w4a~Ttfj3MakPYiimLxndIFVjJAYLbMtqRijlAjY4sNLaogZuB1MuymxzSrXolX7jRNMWmMpvWLoSPT-mqbY4WqP90YxFuJFqDS7bFsBCKv-6T~W62pi1oKNrjVxJ5yjvH1xFsy9Jg21RptQ6A__",
     heading: "Software Engineer",
-    subheading: "Microsoft",
+    subheading: "Deloitte",
     jobType: "REMOTE",
     location: "Bangalore, India",
     salary: "50,000 INR - 70,000 INR",
@@ -41,7 +40,7 @@ const jobListings = [
   {
     logo: "https://s3-alpha-sig.figma.com/img/ac92/7a5b/17e46c83bc126633c5db32fd3403779d?Expires=1742169600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Y76SUroZ0E~~Kp~Co2HE26MF3uzcwXlHVT26pcOPp8stV~ktlo2vPNUj52yjMQrbzg~7dTVo5p~FBPOX2oj9MDxM51nmdPgmewCpGwQIiQMCX52Hy~cXO7gWUVLYVLOAefEBgHLEZiWUvKiOvWi1wzHhzozXqC0sYUw3tkVKY4FmFDwJo~6JISbwh6fJKLdvL7Dn2vnYyhczWOlgFaUqe9UPR21jJfCmA0PJgmB20~miCe5ubJNgWS457MN6rbDRJF4Wj-6CbW4z9cTPVmQIAth7HobUvgzQpijLS~vsHsJjMEGP17Y9Neclf~HxhzOSwb2tqX9dT16juCjOUGAA3g__",
     heading: "Software Engineer",
-    subheading: "Microsoft",
+    subheading: "Wayspire",
     jobType: "REMOTE",
     location: "Bangalore, India",
     salary: "50,000 INR - 70,000 INR",
@@ -59,7 +58,7 @@ export default function Home() {
           </h1>
         </div>
 
-        <section className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <section className=" container mx-auto mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-[90%]  ">
           {Card1data.map((data, index) => (
             <Card1
               key={index}

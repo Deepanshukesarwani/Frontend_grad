@@ -2,8 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import { Menu, X } from "lucide-react"; // For hamburger icon
-
+import { Menu, X } from "lucide-react"; 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 

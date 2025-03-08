@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from "next/image";
 interface JobCardProps {
   logo: string;
   heading: string;
@@ -29,22 +29,21 @@ const JobCard: React.FC<JobCardProps> = ({
       </div>
 
       {/* Job Type */}
-      <span className="inline-block bg-[#02B0F1] text-[#004CB4] text-xs font-semibold px-2 py-1 mt-3 rounded">
+      <span className="inline-block bg-[#DFEDFF] text-[#004CB4] text-xs font-semibold px-2 py-1 mt-3 rounded">
         {jobType}
       </span>
 
       {/* Location & Salary */}
       <div className="mt-3 space-y-2 text-gray-600 text-sm">
         <div className="flex items-center space-x-2">
-          <span>📍</span>
+          <Image src="/location.png" alt="Location" width={16} height={16} />
           <p>{location}</p>
         </div>
         <div className="flex items-center space-x-2">
-          <span>💰</span>
+          <Image src="/Salary.png" alt="Salary" width={16} height={16} />
           <p>{salary}</p>
         </div>
       </div>
-
       {/* Buttons */}
       <div className="flex justify-between mt-4">
         <button className="border border-[#02B0F1] text-[#02B0F1] px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-50">
