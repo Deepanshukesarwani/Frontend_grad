@@ -50,7 +50,7 @@ const jobListings = [
 export default function Home() {
   return (
     <>
-      <div className="w-screen min-h-screen">
+      <div className="w-[100vw] min-h-screen overflow-x-hidden max-w-full">
         <Navbar />
         <div className="container mt-[6rem] mx-auto">
           <h1 className="text-[30px] font-inter font-semibold leading-[100%] tracking-normal text-center text-[#035E80] mt-10">
