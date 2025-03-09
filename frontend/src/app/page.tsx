@@ -1,7 +1,10 @@
+"use client";
 import Navbar from "@/components/Navbar"; 
 import Card1 from "@/components/Card1"; 
 import JobCard from "@/components/JobCard";
 
+import { useState,useEffect } from "react";
+import SplashScreen from "@/components/SplashScreen";
 const Card1data = [
   {
     imageSrc: "/Card1Img1.png",
@@ -48,6 +51,17 @@ const jobListings = [
 ];
 
 export default function Home() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setLoading(false);
+    }, 12000); // Show splash screen for 3 seconds
+
+    return () => clearTimeout(timeout);
+  }, []);
+
+  if (loading) return <SplashScreen onFinish={() => setLoading(false)}/>;
   return (
     <>
       <div className="w-[100vw] min-h-screen overflow-x-hidden max-w-full">
